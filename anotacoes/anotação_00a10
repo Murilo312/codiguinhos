@@ -1,0 +1,79 @@
+print 
+    faz voce escrever algo e tem que ter ()
+    se quiser que seja uma informação não variavel use ""
+    podemos usar .format que nos aspas vai ter {} e depois vai ter
+    .format(variavel) que vai fazer com que no lugar das chaves vai ter a variavel
+    isnumeric = verifica se o input e numero
+    isalpha = verifica se o input e letra
+    isalphanum = verifica se o inuput e alfabetico ou numerico
+    islower = verifica se o input e feito apenas por letras minúsculas
+    isupper = verifica se o input e feito apenas por letras maiúsculas
+    istitle = verifica se o input e capitalizada
+variaveis
+    variavel = input, o que eh isso? 
+    input significa receber ou seja depois do input voce bota uma frase
+    que vai precisar de uma resposta, o usuario vai mandar a mensagem e
+    a variavel vai receber o valor da resposta
+    se quiser que o valor recebido seja interpretado como numero entao variaveis
+    uma função numeral () sendo que dentro dos parenteses tem que possuir o input inteiro
+    int = numero inteiro
+    float = numero real
+    bool = só aceita true ou false
+    str = letras
+        len() verifica a quantitade de letras na string
+        para indentificar tal letra de uma string use variavel(numero da localização da letra- 1)
+        string dinamica, no meio das aspas escreva %s e no fim das aspas mas ainda no print escreva %variavel
+        MANIUPULAÇÃO DE STRING se consiste em colocar a str e escrever variavel[a:b] em que as letras usadas da str sejam a localização a até a b
+operadores aritmeticos
+    + adição
+    - subtração
+    * multiplicação
+    / divisão
+    ** potencia
+    // divisão inteira
+    % resto da divisão
+    = receber
+    ordem de precedencia
+    01. ()
+    02. **
+    03. *, /, %, //
+    04. +, -
+operadores relacionais
+    == comparação de igualdade
+    != comparação de diferença
+    > comparação de maior
+    < comparação de menor
+    <= comparação de maior ou igualdade
+    >= comparação de menor ou igual
+    RESULTADO DESSAS OPERAÇÕES SAO BOOLEANOS
+operadores lógicos
+    o resultados são booleanos
+    not inverte o booleano
+    and so retorna true se ambos forem true
+    or retorna true se algum for true
+estruturas de condições
+    vai ser inposta uma condição e um algoritmo que so vai se realizar se a condição for atendida
+    if estrutura basica de repetição 
+    uma coisa interessante do if é que pra voce fechar a condição basta voce tirar a indentização
+    se o if não for realizado então obritatoriamente o else vai ser realizado, em qualquer caso que o if não se realiza
+    elif é uma continuação do if propondo mais condições sobre a mesma coisa
+        ESTRUTURA DAS CONDIÇÕES
+            if condição:
+                algoritmo
+            elif codição 2:
+                algoritmo
+            else:
+                algoritmo
+estruturas de repetição
+    uma forma de executar uma ação x vezes
+    a repetição será executada até satisfazer a condição no código
+    WHILE: é dividida em 3 partes
+    1.variável para servir de contador
+    2.condição de execução de loop
+    3.incremento de variável
+    ESTRUTURA DE WHILE
+        variável = 0
+        while variavel <5:
+            variavel = variavel + 1
+    BREAK: é ultilizada para quebrar um loop de repetição
+    FOR: é mais ultilizado em listas mas tambem pode ser usado em strings
