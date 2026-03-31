@@ -1,0 +1,8 @@
+coisa = input('digite algo')
+print ('o valor primitivo eh', type(coisa))
+print ('esse bagulho é um número? ', coisa.isnumeric())
+print ('esse bagulho e uma letra? ', coisa.isalpha())
+print ('esse bagulho e uma letra ou numero? ', coisa.isalnum())
+print ('esse bagulho e composto so por letras minusculas?', coisa.islower())
+print ('esse bagulho e composto so po letras maiusculas', coisa.isupper())
+print ('esse bagulho ta capitalizado?', coisa.istitle)
