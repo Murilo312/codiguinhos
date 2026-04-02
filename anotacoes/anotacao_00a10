@@ -77,3 +77,48 @@ estruturas de repetição
             variavel = variavel + 1
     BREAK: é ultilizada para quebrar um loop de repetição
     FOR: é mais ultilizado em listas mas tambem pode ser usado em strings
+    for x in range(5)
+        print (x)
+    vai printar 0, 1, 2, 3, 4
+    for x in range (0,20,2)
+        print (x)
+    isso é imprimir os numeros de 0 a 20 com 2 de diferença
+listas
+    as listas sao conjuntos de elementos
+    possui um indice pra cada elemento da listas
+    ESTRUTURA DA LISTAS
+        lista []
+    podemos acessar elementos de uma lista pelo seu indice (começando do 0)
+    exemplo
+        lista ['aviao', 'bacalhau', 'coracao', 'dado', 'elefante', 'fantasma']
+        lista [2] = 'coracao'
+    para criarmos uma lista em um algoritmo digitamos lista = [a, b, c, d]
+    podemos atribuir um valor a determinado elemento da lista da seguunte forma
+        lista[indice] = valor
+    cuidado a copiar listas pois se copia-las diretamente pode sem querer atribuir uma lista a outra fazendo que a primeira e a segunda sejam a mesma
+    para  criar uma lista nova igual a outra sem que elas se liguem façao seguinte
+    lista1 = lista2[:]
+    len é usado pra determinar a quantidade de elementos em uma lista
+    podemos fatiar uma lista usando o seguinte codigo
+    lista2 = lista1 [1:5]
+    fazendo com que a lista2 se aproprie do valor do indice 1 ate o 5
+    lista.append(el) adiciona algum elemento ao fim da lista
+    del lista elimina o elemento da lista
+    del lista[numero]
+    ESTRUTURA DO FOR PARA LISTAS
+        for x in lista:
+            print(x)
+        isso é 'para cada x in lista faça'
+    listas dentro de listas
+    ESTRUTURA
+        lista1 [lista2, lista3, lista4]
+    podemos navegar nos indices de cada lista da seguinte maneira
+    print (lista1[0][6])
+    fazendo isso eu imprimo o indice seis da lista indice 0
+    DICIONARIO é semelhante a lista mas a sintaxe é diferente
+        DICIONARIO {
+            'PALAVRA1': 'word1'
+            'PALAVRA2': 'word2'
+        }
+        print (DICIONARIO[PALAVRA1])
+        ai ele vai imprimir 'word1'
