@@ -30,3 +30,4 @@ while sair == False:
         sair = True
     else:
         print('comando não encontrado')
+        print ('tente novamente')
