@@ -55,6 +55,7 @@ while sair == False:
         sair = True
     else:
         print('comando não encontrado')
+        print ('tente novamente')
         quantitade_erro = quantitade_erro + 1
         erros.append('comando não encontrado')
         erro = True
