@@ -15,11 +15,11 @@ while sair == False:
         try:
             retirada = float(input('quanto deseja retirar '))
         except Exception as e:
-             print('ei bixin fez merda')
+             print('voce nao consegue retirar do seu saldo algo diferente de um numero')
              retirada = 0
              erro = True
              quantitade_erro = quantitade_erro + 1
-             erros.append(e)
+             erros.append('retirar do banco algo diferente de um numero')
         if retirada < 0:
             print ('voce nao pode retirar uma quantia de dinheiro negativa')
             quantitade_erro = quantitade_erro + 1
@@ -37,11 +37,11 @@ while sair == False:
         try:
             deposito = float(input('quanto voce deseja depositar? '))
         except Exception as e:
-            print ('ei bixin fez merda')
+            print ('voce nao pode depositar algo diferente de um numero')
             deposito = 0
             erro = True
             quantitade_erro = quantitade_erro + 1
-            erros.append(e)
+            erros.append('depositar algo diferente de um numero')
         if deposito < 0:
             print ('voce nao pode depositar uma quantia negativa')
             quantitade_erro = quantitade_erro + 1
@@ -61,9 +61,9 @@ while sair == False:
         erro = True
 if erro == True:
     if quantitade_erro == 1:
-        print (f'o usuario provocou um erro {quantitade_erro} vez')
+        print (f'o usuario provocou um erro no software {quantitade_erro} vez')
     else:
-        print (f'o usuario provocou um erro {quantitade_erro} vezes')
+        print (f'o usuario provocou um erro no software {quantitade_erro} vezes')
     print ('os erros foram: ')
     for er in erros:
         print (er)
