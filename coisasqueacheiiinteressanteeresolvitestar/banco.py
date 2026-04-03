@@ -12,7 +12,7 @@ erro = False
 extrato = []
 transações = 0
 while sair == False:   
-    desejo = str(input('O que deseja fazer? depositar dinheiro, retirar dinheiro, ver seu extrato ou sair do banco? '))
+    desejo = input('O que deseja fazer? depositar dinheiro, retirar dinheiro, ver seu extrato ou sair do banco? ')
     if desejo == 'retirar dinheiro' or desejo == 'retirar':
         try:
             retirada = float(input('quanto deseja retirar '))
