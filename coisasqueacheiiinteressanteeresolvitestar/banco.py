@@ -76,7 +76,7 @@ while sair == False:
         transações = transações + 1
 if erro == True:
     if quantitade_erro >10:
-        print ('puta que pariu como tu conseguiu errar tanto?')
+        print ('pelo amor de deus por que tu tentou achar tantos erros no meu codiguinho?')
         print (f'o usuario provocou um erro no software {quantitade_erro} vezes')
     elif quantitade_erro == 1:
         print (f'o usuario provocou um erro no software {quantitade_erro} vez')
