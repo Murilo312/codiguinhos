@@ -54,9 +54,6 @@ while sair == False:
             saldo = saldo + deposito
             print ('seu saldo atual é', saldo)
             extrato.append (f'deposito de {deposito} reais')
-    elif desejo == 'sair' or desejo == 'sair do banco':
-        print ("SAINDO ...")
-        sair = True
     elif desejo == 'extrato' or desejo == 'ver extrato' or desejo == 'ver meu extrato':
         if transações == 0:
             print ('voce ainda não fez nenhuma transação')
@@ -66,13 +63,17 @@ while sair == False:
             print ('seu extrato é:')
             for transferencia in extrato:
                 print (transferencia)
+    elif desejo == 'sair' or desejo == 'sair do banco':
+        print ("SAINDO ...")
+        sair = True
     else:
         print('comando não encontrado')
         print ('tente novamente')
         quantitade_erro = quantitade_erro + 1
         erros.append('comando não encontrado')
         erro = True
-    transações = transações + 1
+    if deposito > 0 or retirada > 0:
+        transações = transações + 1
 if erro == True:
     if quantitade_erro >10:
         print ('puta que pariu como tu conseguiu errar tanto?')
