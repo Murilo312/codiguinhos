@@ -58,14 +58,14 @@ while sair == False:
         print ("SAINDO ...")
         sair = True
     elif desejo == 'extrato' or desejo == 'ver extrato' or desejo == 'ver meu extrato':
-        try:
+        if transações == 0:
+            print ('voce ainda não fez nenhuma transação')
+            print ('tente novamente')
+        else:
             print (f'você fez {transações} transações')
             print ('seu extrato é:')
             for transferencia in extrato:
                 print (transferencia)
-        except:
-            print ('voce ainda nao fez nenhuma transação')
-            print ('tente outra coisa')
     else:
         print('comando não encontrado')
         print ('tente novamente')
