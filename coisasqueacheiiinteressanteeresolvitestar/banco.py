@@ -9,12 +9,14 @@ desejo = ''
 quantitade_erro = 0
 erros = []
 erro = False
+extrato = []
+transações = 0
 while sair == False:   
-    desejo = str(input('O que deseja fazer? depositar dinheiro, retirar dinheiro ou sair do banco? '))
+    desejo = str(input('O que deseja fazer? depositar dinheiro, retirar dinheiro, ver seu extrato ou sair do banco? '))
     if desejo == 'retirar dinheiro' or desejo == 'retirar':
         try:
             retirada = float(input('quanto deseja retirar '))
-        except Exception as e:
+        except:
              print('voce nao consegue retirar do seu saldo algo diferente de um numero')
              retirada = 0
              erro = True
@@ -33,10 +35,11 @@ while sair == False:
         else:
             saldo = saldo - retirada
             print (f'agora seu saldo é {saldo}')
+            extrato.append(f'retirada de {retirada} reais')
     elif desejo == 'depositar' or desejo == 'depositar dinheiro' :
         try:
             deposito = float(input('quanto voce deseja depositar? '))
-        except Exception as e:
+        except:
             print ('voce nao pode depositar algo diferente de um numero')
             deposito = 0
             erro = True
@@ -50,20 +53,36 @@ while sair == False:
         elif deposito >= 0:
             saldo = saldo + deposito
             print ('seu saldo atual é', saldo)
+            extrato.append (f'deposito de {deposito} reais')
     elif desejo == 'sair' or desejo == 'sair do banco':
         print ("SAINDO ...")
         sair = True
+    elif desejo == 'extrato' or desejo == 'ver extrato' or desejo == 'ver meu extrato':
+        try:
+            print (f'você fez {transações} transações')
+            print ('seu extrato é:')
+            for transferencia in extrato:
+                print (transferencia)
+        except:
+            print ('voce ainda nao fez nenhuma transação')
+            print ('tente outra coisa')
     else:
         print('comando não encontrado')
         print ('tente novamente')
         quantitade_erro = quantitade_erro + 1
         erros.append('comando não encontrado')
         erro = True
+    transações = transações + 1
 if erro == True:
-    if quantitade_erro == 1:
+    if quantitade_erro >10:
+        print ('puta que pariu como tu conseguiu errar tanto?')
+        print (f'o usuario provocou um erro no software {quantitade_erro} vezes')
+    elif quantitade_erro == 1:
         print (f'o usuario provocou um erro no software {quantitade_erro} vez')
     else:
         print (f'o usuario provocou um erro no software {quantitade_erro} vezes')
     print ('os erros foram: ')
     for er in erros:
         print (er)
+    if quantitade_erro > 10:
+        print ('voce esta EXPULSO do nosso banco digital ')
