@@ -11,6 +11,7 @@ erros = []
 erro = False
 extrato = []
 transações = 0
+import time
 while sair == False:   
     desejo = input('O que deseja fazer? depositar dinheiro, retirar dinheiro, ver seu extrato ou sair do banco? ')
     if desejo == 'retirar dinheiro' or desejo == 'retirar':
@@ -64,7 +65,10 @@ while sair == False:
             for transferencia in extrato:
                 print (transferencia)
     elif desejo == 'sair' or desejo == 'sair do banco':
-        print ("SAINDO ...")
+        texto = "SAINDO ..."
+        for letra in texto:
+            print(letra, end='', flush=True)
+            time.sleep(0.2)
         sair = True
     else:
         print('comando não encontrado')
