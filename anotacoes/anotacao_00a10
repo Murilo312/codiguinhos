@@ -122,3 +122,15 @@ listas
         }
         print (DICIONARIO[PALAVRA1])
         ai ele vai imprimir 'word1'
+funções
+    a ideia é de criar um bloco de código reitilizável
+    podemos chamar a função de qualquer lugar
+    ESTRUTURA DAS funções
+        def qual seu nome ():
+            nome = input ('qual e teu nome)
+            return nome
+    escopo global e local
+        quando criamos ou modificamos uma variavel dentro de uma função essa variavel so existe dentro da função assim como sua modificação
+        quamdo criamos uma variavel fora de uma função essa variável vai acabar funcionnando pro codigo inteiro
+    funções recursivas
+        e o ato de chamar a função dentro dela mesma podendo criar um loop infinito
